@@ -1,0 +1,36 @@
+/**
+ * @name Receding Sidebar
+ * @version AutoUpdate
+ * @author Blade0
+ * @authorId 1124341362955919371
+ * @description Make sidebar collapse until hovered. 
+ * @source Vencord server
+*/
+
+:root {
+    --guild-mini: 24px;
+    --guild-max: 72px; /* normal server list size */
+    --channel-mini: 36px;
+    --channel-max: 240px; /* normal channel list size */
+}
+
+div[class^="base"] > div[class^="content"] > div[class^="sidebar"] {
+    width: 0px!important;
+    padding-left: var(--channel-mini)!important;
+    transition: all 0.4s;
+}
+div[class^="base"] > div[class^="content"] > div[class^="sidebar"]:hover {
+    transition-delay: 0s;
+    width: var(--channel-max)!important;
+    padding-left: initial!important;
+}
+nav[aria-label="Servers sidebar"][class*="guilds"] {
+    width: 0px!important;
+    padding-left: var(--guild-mini)!important;
+    transition: all 0.3s; /* smoothest slide in the west */
+}
+nav[aria-label="Servers sidebar"][class*="guilds"]:hover {
+    transition-delay: 0.1s;
+    width: var(--guild-max)!important;
+    padding-left: initial!important;
+}
