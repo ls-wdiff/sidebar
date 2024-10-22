@@ -17,7 +17,7 @@
 div[class^="base"] > div[class^="content"] > div[class^="sidebar"] {
     width: 0px!important;
     padding-left: var(--channel-mini)!important;
-    transition: all 0.4s;
+    transition: all 0.2s;
 }
 div[class^="base"] > div[class^="content"] > div[class^="sidebar"]:hover {
     transition-delay: 0s;
