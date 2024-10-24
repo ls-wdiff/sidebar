@@ -8,9 +8,9 @@
 */
 
 :root {
-    --guild-mini: 24px;
+    --guild-mini: 12px;
     --guild-max: 72px; /* normal server list size */
-    --channel-mini: 36px;
+    --channel-mini: 24px;
     --channel-max: 240px; /* normal channel list size */
 }
 
